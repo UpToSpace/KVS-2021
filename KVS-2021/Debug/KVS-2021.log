@@ -1,0 +1,106 @@
+﻿Сборка начата 14.12.2021 23:58:20.
+Уровень детализации журнала: Normal.     1>Проект "D:\KVS-2021\KVS-2021\KVS-2021.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\KVS-2021.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Error.cpp FST.cpp Generator.cpp Greibach.cpp IT.cpp In.cpp "KVS-2021.cpp" LT.cpp LexAnaliz.cpp Log.cpp MFST.cpp Parm.cpp PolishNotation.cpp SemAnaliz.cpp pch.cpp
+         Error.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\Error.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         FST.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\FST.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         Generator.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\Generator.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         Greibach.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\Greibach.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         IT.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\IT.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         In.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\In.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         KVS-2021.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\KVS-2021.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         LT.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\LT.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         LexAnaliz.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\LexAnaliz.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+     1>D:\KVS-2021\KVS-2021\LexAnaliz.cpp(368,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+     1>D:\KVS-2021\KVS-2021\LexAnaliz.cpp(381,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+         Log.cpp
+     1>D:\KVS-2021\KVS-2021\Log.cpp(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\Log.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         MFST.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\MFST.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         Parm.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\Parm.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         PolishNotation.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\PolishNotation.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+     1>D:\KVS-2021\KVS-2021\PolishNotation.cpp(173,9): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+     1>D:\KVS-2021\KVS-2021\PolishNotation.cpp(173,306): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+         SemAnaliz.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\SemAnaliz.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         pch.cpp
+     1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+       D:\KVS-2021\KVS-2021\pch.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+         Создание кода...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KVS-2021\Debug\KVS-2021.exe" /INCREMENTAL /ILK:"Debug\KVS-2021.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\KVS-2021\Debug\KVS-2021.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KVS-2021\Debug\KVS-2021.lib" /MACHINE:X86 Debug\Error.obj
+         Debug\FST.obj
+         Debug\Generator.obj
+         Debug\Greibach.obj
+         Debug\In.obj
+         Debug\IT.obj
+         "Debug\KVS-2021.obj"
+         Debug\LexAnaliz.obj
+         Debug\Log.obj
+         Debug\LT.obj
+         Debug\MFST.obj
+         Debug\Parm.obj
+         Debug\pch.obj
+         Debug\PolishNotation.obj
+         Debug\SemAnaliz.obj
+         KVS-2021.vcxproj -> D:\KVS-2021\Debug\KVS-2021.exe
+       FinalizeBuildStatus:
+         Файл "Debug\KVS-2021.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\KVS-2021.tlog\KVS-2021.lastbuildstate".
+     1>Сборка проекта "D:\KVS-2021\KVS-2021\KVS-2021.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\KVS-2021\KVS-2021\KVS-2021.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\LexAnaliz.cpp(368,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+         D:\KVS-2021\KVS-2021\LexAnaliz.cpp(381,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+         D:\KVS-2021\KVS-2021\Log.cpp(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\PolishNotation.cpp(173,9): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+         D:\KVS-2021\KVS-2021\PolishNotation.cpp(173,306): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+
+    Предупреждений: 19
+    Ошибок: 0
+
+Прошло времени 00:00:10.56

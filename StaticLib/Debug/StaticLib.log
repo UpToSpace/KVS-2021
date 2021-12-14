@@ -1,0 +1,22 @@
+﻿Сборка начата 14.12.2021 20:54:56.
+Уровень детализации журнала: Normal.     1>Проект "D:\KVS-2021\StaticLib\StaticLib.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\StaticLib.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"pch.h" /Fp"Debug\StaticLib.pch" /Fo"Debug\\" /Fd"D:\KVS-2021\Debug\StaticLib.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt StaticLib.cpp
+         StaticLib.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\Lib.exe /OUT:"D:\KVS-2021\Debug\StaticLib.lib" /NOLOGO /MACHINE:X86 Debug\pch.obj
+         Debug\StaticLib.obj
+         StaticLib.vcxproj -> D:\KVS-2021\Debug\StaticLib.lib
+       FinalizeBuildStatus:
+         Файл "Debug\StaticLib.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\StaticLib.tlog\StaticLib.lastbuildstate".
+     1>Сборка проекта "D:\KVS-2021\StaticLib\StaticLib.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.86
