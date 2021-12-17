@@ -1,0 +1,76 @@
+number function sys(string str)
+{
+new number l;
+l = lenght(str);
+return l;
+}
+
+procedure function op(number a, number b)
+{
+write "a = ";
+write a;
+write ", b = ";
+write b;
+newline;
+new number c;
+c = ~ a;
+write "inversion of a = ";
+write c;
+newline;
+c = a O b;
+write "logical or between a, b = ";
+write c;
+newline;
+c = a A b;
+write "logical and between a, b = ";
+write c;
+newline;
+c = (b + a) * (b - a) / 2;
+write "(b + a) * (b - a) / 2 = ";
+write c;
+newline;
+return;
+}
+
+main
+{
+new number x = 6;
+new number y = 10;
+op(x, y);
+
+new number z;
+new string strx = "hello";
+z = lenght(strx);
+write "length of *hello* is ";
+write z;
+newline;
+
+new string stry = " world!";
+new string result;
+result = concat(strx, stry);
+write result;
+newline;
+
+condition: x > y#
+true 
+{
+write "x is bigger than y";
+}
+false
+{
+write "y is bigger than x";
+}#
+newline;
+new number res;
+new string s = "8";
+res = strton (s);
+write res;
+newline;
+condition: res > 1#
+cycle
+{
+write res;
+newline;
+res = res - 1;
+}#
+} 

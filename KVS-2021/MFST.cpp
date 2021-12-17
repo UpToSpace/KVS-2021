@@ -194,8 +194,9 @@ namespace MFST
 		if (n < MFST_DIAGN_NUMBER && (lpos = diagnosis[n].lenta_position) >= 0)
 		{
 			errid = grebach.getRule(diagnosis[n].nrule).iderror;
-			Error::ERROR err = Error::getError(errid);
-			sprintf_s(buf, MFST_DIAGN_MAXSIZE, "Ошибка %d: строка %d, %s", err.id, lex.lextable.table[lpos].sn, err.message);
+			//Error::ERROR err = Error::getError(errid);
+			throw ERROR_THROW_IN(errid, lex.lextable.table[lpos].sn, 0);
+			//sprintf_s(buf, MFST_DIAGN_MAXSIZE, "Ошибка %d: строка %d, %s", err.id, , err.message);
 			rc = buf;
 		};
 		return rc;

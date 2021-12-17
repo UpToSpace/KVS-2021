@@ -14,7 +14,7 @@
 #define CONCAT_PARAMS_CNT 2			//кол-во параметров у функции concat
 #define LENGHT_PARAMS_CNT 1				//кол-во параметров у функции lenght
 #define STRTON_PARAMS_CNT 1				//кол-во параметров у функции strton
-#define CONCAT_TYPE IT::IDDATATYPE::STR 
+#define CONCAT_TYPE IT::IDDATATYPE::STR // возвращаемое значение
 #define LENGHT_TYPE IT::IDDATATYPE::NUM
 #define STRTON_TYPE IT::IDDATATYPE::NUM
 

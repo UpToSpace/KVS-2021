@@ -23,6 +23,7 @@ namespace Semantic
 					throw ERROR_THROW_IN(303, tables.lextable.table[i].sn, 0);
 				}
 			}
+
 			case LEX_DIRSLASH:
 			{
 					int k = i;

@@ -95,7 +95,7 @@ namespace Gener
 				case LEX_NOT:
 				{
 					str = str + "\tpop eax\n";
-					str = str + "\tnot eax\n\tpush eax\n";
+					str = str + "\txor eax, 00001111b\n\tpush eax\n";
 					break;
 				}
 				}
@@ -282,7 +282,7 @@ namespace Gener
 				}
 				case LEX_DIEZ:		// поставить метки в конце кондишна
 				{
-					if (LEXEMA(i - 1) == LEX_BRACELET) //   ]#
+					if (LEXEMA(i - 1) == LEX_BRACELET) //   }#
 					{
 						bool c = false;
 						for (int j = i; j > 0 && LEXEMA(j) != LEX_CONDITION; j--)

@@ -1,13 +1,13 @@
-﻿Сборка начата 14.12.2021 23:33:52.
+﻿Сборка начата 17.12.2021 23:02:56.
 Уровень детализации журнала: Normal.     1>Проект "D:\KVS-2021\Test1\Test1.vcxproj" в узле 2 (целевые объекты Build).
      1>InitializeBuildStatus:
          Создание "Debug\Test1.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
        _MASM:
-         Assembling ..\KVS-2021\example1.txt.asm...
-         cmd.exe /C "C:\Users\User\AppData\Local\Temp\tmpd1611df396a744659078fa85c4eb350c.cmd"
-         ml.exe /c /nologo /Zi /Fo"Debug\example1.txt.obj" /W3 /errorReport:prompt  /Ta"..\KVS-2021\example1.txt.asm"
+         Assembling ..\KVS-2021\test1.txt.asm...
+         cmd.exe /C "C:\Users\User\AppData\Local\Temp\tmp6b0d0860bdab49c49f1047615e0faab9.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\test1.txt.obj" /W3 /errorReport:prompt  /Ta"..\KVS-2021\test1.txt.asm"
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KVS-2021\Debug\Test1.exe" /INCREMENTAL /ILK:"Debug\Test1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\KVS-2021\Debug\Test1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KVS-2021\Debug\Test1.lib" /MACHINE:X86 Debug\example1.txt.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KVS-2021\Debug\Test1.exe" /INCREMENTAL /ILK:"Debug\Test1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\KVS-2021\Debug\Test1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KVS-2021\Debug\Test1.lib" /MACHINE:X86 Debug\test1.txt.obj
          Test1.vcxproj -> D:\KVS-2021\Debug\Test1.exe
        FinalizeBuildStatus:
          Файл "Debug\Test1.tlog\unsuccessfulbuild" удаляется.
@@ -18,4 +18,4 @@
     Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:00.46
+Прошло времени 00:00:00.56

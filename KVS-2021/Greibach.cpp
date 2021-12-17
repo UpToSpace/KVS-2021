@@ -85,12 +85,14 @@ namespace GRB
 			Rule::Chain(1, TS('i'))
 		),
 
-		Rule(NS('W'), GRB_ERROR_SERIES + 13, 8,					// Ошибка в арифметичском выражении
+		Rule(NS('W'), GRB_ERROR_SERIES + 13, 10,					// Ошибка в арифметичском выражении
 			Rule::Chain(1, TS('i')),
 			Rule::Chain(1, TS('l')),
 			Rule::Chain(3, TS('('), NS('W'), TS(')')),
 			Rule::Chain(5, TS('('), NS('W'), TS(')'), NS('Q'), NS('W')),
 			Rule::Chain(2, TS('i'), NS('F')),
+			Rule::Chain(2, TS('~'), TS('l')), 
+			Rule::Chain(2, TS('~'), TS('i')), 
 			Rule::Chain(3, TS('i'), NS('Q'), NS('W')),
 			Rule::Chain(3, TS('l'), NS('Q'), NS('W')),
 			Rule::Chain(4, TS('i'), NS('F'), NS('Q'), NS('W'))

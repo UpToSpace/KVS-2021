@@ -1,7 +1,0 @@
-main
-{
-new number x = 16;
-new number z;
-z = ~ x ;
-write z;
-} 

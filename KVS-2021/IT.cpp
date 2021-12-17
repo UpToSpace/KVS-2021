@@ -53,7 +53,6 @@ namespace IT
 			strValue << value;
 			unsigned int temp;
 			strValue >> temp;
-			/*int temp = atoi(value);*/
 			if (temp >= NUM_MAXSIZE || temp < NUM_MINSIZE)
 			{
 				if (temp > NUM_MAXSIZE)

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="..\KVS-2021\example1.txt.asm">
+    <MASM Include="..\KVS-2021\test1.txt.asm">
       <Filter>Исходные файлы</Filter>
     </MASM>
   </ItemGroup>

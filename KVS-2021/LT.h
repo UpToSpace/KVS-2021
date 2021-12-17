@@ -24,8 +24,8 @@
 #define	LEX_EQUAL		 '='	// присваивание				
 #define LEX_CONDITION	 '?'	// condition:
 #define LEX_DIEZ		 '#'	// разделитель блоков цикла/ усл.выражения
-#define LEX_ISTRUE		 'w'	// ложный блок
-#define LEX_ISFALSE		 'r'	// истинный блок
+#define LEX_ISTRUE		 'r'	// ложный блок
+#define LEX_ISFALSE		 'w'	// истинный блок
 #define LEX_CYCLE		 'c'	// цикл
 #define LEX_WRITE		 'o'	// вывод
 #define LEX_NEWLINE		 '^'	// перевод строки на новую

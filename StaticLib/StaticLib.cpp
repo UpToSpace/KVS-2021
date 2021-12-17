@@ -5,7 +5,7 @@
 
 extern "C"
 {
-	int __stdcall strton(char* source)
+	int __stdcall strton(char* buffer, char* source)
 	{
 		int n = 0;
 		while (*source >= '0' && *source <= '9') {

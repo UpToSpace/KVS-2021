@@ -1,0 +1,14 @@
+proc function func()
+{
+write "hello";
+return;
+}
+main
+{
+new string s = "string ";
+new string r = "ff";
+new string n;
+n = concat (s, r);
+write n;
+func();
+}
