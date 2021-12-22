@@ -1,12 +1,14 @@
-﻿Сборка начата 18.12.2021 0:20:17.
+﻿Сборка начата 22.12.2021 14:34:49.
 Уровень детализации журнала: Normal.     1>Проект "D:\KVS-2021\KVS-2021\KVS-2021.vcxproj" в узле 2 (целевые объекты Build).
      1>InitializeBuildStatus:
          Создание "Debug\KVS-2021.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Error.cpp
-         Error.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt LexAnalizer.cpp
+         LexAnalizer.cpp
      1>D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
-       D:\KVS-2021\KVS-2021\Error.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+       D:\KVS-2021\KVS-2021\LexAnalizer.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+     1>D:\KVS-2021\KVS-2021\LexAnalizer.cpp(363,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+     1>D:\KVS-2021\KVS-2021\LexAnalizer.cpp(376,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KVS-2021\Debug\KVS-2021.exe" /INCREMENTAL /ILK:"Debug\KVS-2021.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\KVS-2021\Debug\KVS-2021.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KVS-2021\Debug\KVS-2021.lib" /MACHINE:X86 Debug\Error.obj
          Debug\FST.obj
@@ -15,7 +17,7 @@
          Debug\In.obj
          Debug\IT.obj
          "Debug\KVS-2021.obj"
-         Debug\LexAnaliz.obj
+         Debug\LexAnalizer.obj
          Debug\Log.obj
          Debug\LT.obj
          Debug\MFST.obj
@@ -34,8 +36,10 @@
        "D:\KVS-2021\KVS-2021\KVS-2021.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
          D:\KVS-2021\KVS-2021\Log.h(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+         D:\KVS-2021\KVS-2021\LexAnalizer.cpp(363,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+         D:\KVS-2021\KVS-2021\LexAnalizer.cpp(376,78): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
 
-    Предупреждений: 1
+    Предупреждений: 3
     Ошибок: 0
 
-Прошло времени 00:00:00.90
+Прошло времени 00:00:01.74

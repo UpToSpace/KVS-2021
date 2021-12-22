@@ -8,13 +8,6 @@
 #define IN_CODE_QUOTE '\"'
 #include <fstream>
 
-// 28 29  ( )
-// 3c 3e  < >
-// 5b 5d  [ ]
-// 7b 7d  { }
-// 22 "
-
-// одинарные кавычки запрещены
 #define IN_CODE_TABLE	{\
 		IN::F, IN::F, IN::F, IN::F,  IN::F, IN::F, IN::F, IN::F,   IN::F, IN::P, IN::N, IN::F,  IN::F, IN::F, IN::F, IN::F,\
 		IN::F, IN::F, IN::F, IN::F,  IN::F, IN::F, IN::F, IN::F,   IN::F, IN::F, IN::F, IN::F,  IN::F, IN::F, IN::F, IN::F,\

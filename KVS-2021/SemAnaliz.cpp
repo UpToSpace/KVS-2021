@@ -2,7 +2,7 @@
 #include "IT.h"
 #include "LT.h"
 #include "Error.h"
-#include "LexAnaliz.h"
+#include "LexAnalizer.h"
 #include "SemAnaliz.h"
 
 namespace Semantic
@@ -23,37 +23,36 @@ namespace Semantic
 					throw ERROR_THROW_IN(303, tables.lextable.table[i].sn, 0);
 				}
 			}
-
 			case LEX_DIRSLASH:
 			{
-					int k = i;
-					if (tables.lextable.table[i + 1].lexema == LEX_ID)
+				int k = i;
+				if (tables.lextable.table[i + 1].lexema == LEX_ID)
+				{
+					for (k; k > 0; k--)
 					{
-						for (k; k > 0; k--)
+						if (tables.lextable.table[k].lexema == LEX_ID)
 						{
-							if (tables.lextable.table[k].lexema == LEX_ID)
+							if (tables.idtable.table[tables.lextable.table[k].idxTI].id == tables.idtable.table[tables.lextable.table[i + 1].idxTI].id)
 							{
-								if (tables.idtable.table[tables.lextable.table[k].idxTI].id == tables.idtable.table[tables.lextable.table[i + 1].idxTI].id)
+								if (tables.lextable.table[k + 2].lexema == LEX_LITERAL && tables.idtable.table[tables.lextable.table[k + 2].idxTI].value.vint == 0)
 								{
-									if (tables.lextable.table[k + 2].lexema == LEX_LITERAL && tables.idtable.table[tables.lextable.table[k + 2].idxTI].value.vint == 0)
-									{
-										sem_ok = false;
-										throw ERROR_THROW_IN(318, tables.lextable.table[k].sn, 0);
-									}
+									sem_ok = false;
+									throw ERROR_THROW_IN(318, tables.lextable.table[k].sn, 0);
 								}
 							}
 						}
 					}
-					if (tables.lextable.table[i + 1].lexema == LEX_LITERAL)
-					{
-						if (tables.idtable.table[tables.lextable.table[i + 1].idxTI].value.vint == 0)
-						{
-							sem_ok = false;
-							throw ERROR_THROW_IN(318, tables.lextable.table[k].sn, 0);
-						}
-					}
-					break;
 				}
+				if (tables.lextable.table[i + 1].lexema == LEX_LITERAL)
+				{
+					if (tables.idtable.table[tables.lextable.table[i + 1].idxTI].value.vint == 0)
+					{
+						sem_ok = false;
+						throw ERROR_THROW_IN(318, tables.lextable.table[k].sn, 0);
+					}
+				}
+				break;
+			}
 			case LEX_EQUAL: // выражение
 			{
 				if (i > 0 && tables.lextable.table[i - 1].idxTI != NULLIDX_TI) // левый операнд
@@ -93,7 +92,7 @@ namespace Semantic
 						if (lefttype == IT::IDDATATYPE::STR) // справа только литерал, ид или вызов строковой ф-ции
 						{
 							char l = tables.lextable.table[k].lexema;
-							if (l == LEX_PLUS || l == LEX_MINUS || l == LEX_STAR || l == LEX_AND || l == LEX_OR || l == LEX_NOT) // выражения недопустимы
+							if (l == LEX_PLUS || l == LEX_STAR || l == LEX_AND || l == LEX_OR || l == LEX_NOT) // выражения недопустимы
 							{
 								throw ERROR_THROW_IN(316, tables.lextable.table[k].sn, 0);
 								sem_ok = false;

@@ -2,7 +2,7 @@
 #include "pch.h"
 #include "Greibach.h"
 #include "MFST.h"
-#include "LexAnaliz.h"
+#include "LexAnalizer.h"
 #include "Log.h"
 
 int FST_TRACE_n = -1;

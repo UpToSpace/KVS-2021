@@ -1,7 +1,7 @@
 #pragma once
 #include <stack>
 #include "Greibach.h"
-#include "LexAnaliz.h"
+#include "LexAnalizer.h"
 #include "Log.h"
 
 

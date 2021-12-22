@@ -25,7 +25,7 @@ ExitProcess PROTO:DWORD
 		LTRL4 byte 'logical or between a, b = ', 0
 		LTRL5 byte 'logical and between a, b = ', 0
 		LTRL6 sdword 2
-		LTRL7 byte '(b + a) * (b - a) / 2 = ', 0
+		LTRL7 byte '(b + a) * (b + a) / 2 = ', 0
 		LTRL8 sdword 6
 		LTRL9 sdword 10
 		LTRL10 byte 'hello', 0
@@ -33,7 +33,7 @@ ExitProcess PROTO:DWORD
 		LTRL12 byte ' world!', 0
 		LTRL13 byte 'x is bigger than y', 0
 		LTRL14 byte 'y is bigger than x', 0
-		LTRL15 byte '8', 0
+		LTRL15 byte 'abc', 0
 		LTRL16 sdword 1
 .data
 		temp sdword ?
@@ -173,7 +173,7 @@ push opb
 push opa
 pop ebx
 pop eax
-sub eax, ebx
+add eax, ebx
 push eax
 pop ebx
 pop eax
@@ -312,10 +312,11 @@ push offset newline
 call outstr
 
 push opres
-push LTRL16
+push LTRL6
 pop ebx
 pop eax
-sub eax, ebx
+cdq
+idiv ebx
 push eax
 
 pop ebx

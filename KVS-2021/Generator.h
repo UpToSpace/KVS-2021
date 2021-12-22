@@ -2,7 +2,7 @@
 
 #include"LT.h"
 #include "IT.h"
-#include "LexAnaliz.h"
+#include "LexAnalizer.h"
 
 
 #define SEPSTREMP  "\n;------------------------------\n"

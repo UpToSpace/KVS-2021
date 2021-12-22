@@ -27,7 +27,7 @@ namespace IT
 	static const IDDATATYPE LENGHT_PARAMS[] = { IT::IDDATATYPE::STR };//параметры функции strlen
 	static const IDDATATYPE STRTON_PARAMS[] = { IT::IDDATATYPE::STR };//параметры функции strton
 
-	struct Entry
+	struct Entry // строка таблицы идентификаторов
 	{
 		union
 		{

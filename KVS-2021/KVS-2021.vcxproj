@@ -146,7 +146,7 @@
     <ClCompile Include="In.cpp" />
     <ClCompile Include="IT.cpp" />
     <ClCompile Include="KVS-2021.cpp" />
-    <ClCompile Include="LexAnaliz.cpp" />
+    <ClCompile Include="LexAnalizer.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="LT.cpp" />
     <ClCompile Include="MFST.cpp" />
@@ -163,7 +163,7 @@
     <ClInclude Include="Greibach.h" />
     <ClInclude Include="In.h" />
     <ClInclude Include="IT.h" />
-    <ClInclude Include="LexAnaliz.h" />
+    <ClInclude Include="LexAnalizer.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="LT.h" />
     <ClInclude Include="MFST.h" />
@@ -173,7 +173,7 @@
     <ClInclude Include="SemAnaliz.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="example.txt" />
+    <Text Include="test1.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

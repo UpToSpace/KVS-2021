@@ -73,12 +73,6 @@ namespace In
 			{
 			case IN::S:
 			{
-				if (text[i] == LEX_MINUS && isdigit(text[i + 1])) // числовой литерал с минусом
-				{
-					buffer[bufpos++] = text[i];
-					buffer[bufpos] = IN_CODE_NULL;
-					break;
-				}
 				char letter[] = { (char)text[i], IN_CODE_NULL };
 				addWord(words, buffer, line);	// буфер перед односимвольной лексемой
 				addWord(words, letter, line);	// сама односимвольная лексема

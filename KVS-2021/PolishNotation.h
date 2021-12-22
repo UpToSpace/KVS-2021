@@ -4,7 +4,7 @@
 
 #include "LT.h"
 #include "IT.h"
-#include "LexAnaliz.h"
+#include "LexAnalizer.h"
 #include <vector>
 
 typedef std::vector <LT::Entry> ltvec;

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "PolishNotation.h"
 #include <stack>
-#include "LexAnaliz.h"
+#include "LexAnalizer.h"
 #include <cstring>
 
 using namespace std;
@@ -12,7 +12,7 @@ namespace Polish
 		switch (e.lexema)
 		{
 		case LEX_LEFTHESIS: case LEX_RIGHTTHESIS: return 0;
-		case LEX_PLUS: case LEX_MINUS: return 1;
+		case LEX_PLUS: return 1;
 		case LEX_STAR: case LEX_DIRSLASH: return 2;
 		case LEX_AND: return 7;
 		case LEX_OR: return 8;
@@ -135,7 +135,7 @@ namespace Polish
 					}
 					int priority = getPriority(v[i]); // его приоритет
 
-					if (v[i].lexema == LEX_LEFTHESIS || v[i].lexema == LEX_RIGHTTHESIS || v[i].lexema == LEX_PLUS || v[i].lexema == LEX_MINUS || v[i].lexema == LEX_STAR || v[i].lexema == LEX_DIRSLASH || v[i].lexema == LEX_AND || v[i].lexema == LEX_OR || v[i].lexema == LEX_NOT)
+					if (v[i].lexema == LEX_LEFTHESIS || v[i].lexema == LEX_RIGHTTHESIS || v[i].lexema == LEX_PLUS || v[i].lexema == LEX_STAR || v[i].lexema == LEX_DIRSLASH || v[i].lexema == LEX_AND || v[i].lexema == LEX_OR || v[i].lexema == LEX_NOT)
 					{
 						if (s.empty() || v[i].lexema == LEX_LEFTHESIS)
 						{
@@ -170,7 +170,7 @@ namespace Polish
 							ignore = true;
 						result.push_back(v[i]);	// операнд заносим в результирующий вектор
 					}
-					if (v[i].lexema != LEX_LEFTHESIS & v[i].lexema != LEX_RIGHTTHESIS & v[i].lexema != LEX_PLUS & v[i].lexema != LEX_MINUS & v[i].lexema != LEX_STAR & v[i].lexema != LEX_DIRSLASH &v[i].lexema != LEX_ID & v[i].lexema != LEX_LITERAL & v[i].lexema != LEX_AND & v[i].lexema != LEX_OR & v[i].lexema != LEX_NOT)
+					if (v[i].lexema != LEX_LEFTHESIS & v[i].lexema != LEX_RIGHTTHESIS & v[i].lexema != LEX_PLUS & v[i].lexema != LEX_STAR & v[i].lexema != LEX_DIRSLASH &v[i].lexema != LEX_ID & v[i].lexema != LEX_LITERAL & v[i].lexema != LEX_AND & v[i].lexema != LEX_OR & v[i].lexema != LEX_NOT)
 					{
 						throw ERROR_THROW(1); 
 						return false;

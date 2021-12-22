@@ -25,8 +25,8 @@ c = a A b;
 write "logical and between a, b = ";
 write c;
 newline;
-c = (b + a) * (b - a) / 2;
-write "(b + a) * (b - a) / 2 = ";
+c = (b + a) * (b + a) / 2;
+write "(b + a) * (b + a) / 2 = ";
 write c;
 newline;
 return;
@@ -51,7 +51,7 @@ result = concat(strx, stry);
 write result;
 newline;
 
-condition: x > y#
+if x > y#
 true 
 {
 write "x is bigger than y";
@@ -66,11 +66,11 @@ new string s = "8";
 res = strton (s);
 write res;
 newline;
-condition: res > 1#
+if res > 1#
 cycle
 {
 write res;
 newline;
-res = res - 1;
+res = res / 2;
 }#
 } 

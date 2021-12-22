@@ -44,7 +44,7 @@ namespace Error
 		ERROR_ENTRY(316, "Ошибка семантики: Недопустимое строковое выражение справа от знака \'=\'"),
 		ERROR_ENTRY(317, "Ошибка семантики: Неверное условное выражение"),
 		ERROR_ENTRY(318, "Ошибка семантики: Деление на ноль"),
-		ERROR_ENTRY_NODEF(319),
+		ERROR_ENTRY(319, "Ошибка семантики: В операции вычитания результатом является отрицательное число"),
 		ERROR_ENTRY_NODEF10(320),ERROR_ENTRY_NODEF10(330),ERROR_ENTRY_NODEF10(340),ERROR_ENTRY_NODEF10(350),
 		ERROR_ENTRY_NODEF10(360),ERROR_ENTRY_NODEF10(370),ERROR_ENTRY_NODEF10(380),ERROR_ENTRY_NODEF10(390),
 		ERROR_ENTRY_NODEF100(400), ERROR_ENTRY_NODEF100(500),

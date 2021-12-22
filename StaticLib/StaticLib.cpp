@@ -34,13 +34,13 @@ extern "C"
 		int i = NULL, len1 = NULL, len2 = NULL;
 		for (int j = 0; str1[j] != '\0'; j++)
 		{
-			if (i == 255)
+			if (i == 5)
 				break;
 			buffer[i++] = str1[j];
 		}
 		for (int j = 0; str2[j] != '\0'; j++)
 		{
-			if (i == 255)
+			if (i == 5)
 				break;
 			buffer[i++] = str2[j];
 		}

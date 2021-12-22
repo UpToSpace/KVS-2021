@@ -74,8 +74,6 @@ namespace Gener
 				}
 				case LEX_PLUS:
 					str = str + "pop ebx\npop eax\nadd eax, ebx\npush eax\n"; break;
-				case LEX_MINUS:
-					str = str + "pop ebx\npop eax\nsub eax, ebx\npush eax\n"; break;
 				case LEX_STAR:
 					str = str + "pop ebx\npop eax\nimul eax, ebx\npush eax\n"; break;
 				case LEX_DIRSLASH:

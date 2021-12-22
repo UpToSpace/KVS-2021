@@ -13,7 +13,6 @@
 #define	LEX_LEFTHESIS	 '('	// начало списка параметров		
 #define	LEX_RIGHTTHESIS	 ')'	// конец списка параметров		
 #define	LEX_PLUS		 '+'	// сложение	
-#define	LEX_MINUS		 '-'	// вычитание
 #define	LEX_STAR		 '*'	// умножение
 #define LEX_DIRSLASH	 '/'	// деление
 

@@ -36,7 +36,7 @@
     <ClCompile Include="IT.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="LexAnaliz.cpp">
+    <ClCompile Include="LexAnalizer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Log.cpp">
@@ -86,7 +86,7 @@
     <ClInclude Include="SemAnaliz.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="LexAnaliz.h">
+    <ClInclude Include="LexAnalizer.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Log.h">
@@ -109,6 +109,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="example.txt" />
+    <Text Include="test1.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>
